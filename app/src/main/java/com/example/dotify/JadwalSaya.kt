@@ -1,10 +1,13 @@
 package com.example.dotify
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageButton
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.button.MaterialButton
 
 class JadwalSaya : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
@@ -12,6 +15,16 @@ class JadwalSaya : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_jadwal_saya)
+
+        findViewById<MaterialButton>(R.id.tambah_jadwal).setOnClickListener {
+            val intent = Intent(this, TambahJadwal::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<ImageButton>(R.id.kembali).setOnClickListener {
+            val intent = Intent(this, HalamanUtama::class.java)
+            startActivity(intent)
+        }
 
         list.addAll(CeritanyaDataBase.listJadwal)
         list.sortWith(compareBy({it.tanggal.reversed()}, {it.jam}))

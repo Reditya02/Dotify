@@ -4,6 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Dotify/app/src/main/res/layout/activity_halaman_utama.xml" value="0.152" />
+        <entry key="..\:/Dotify/app/src/main/res/layout/activity_jadwal_saya.xml" value="0.20471014492753623" />
+        <entry key="..\:/Dotify/app/src/main/res/layout/activity_main.xml" value="0.10085470085470086" />
+        <entry key="..\:/Dotify/app/src/main/res/layout/activity_tambah_jadwal.xml" value="0.10085470085470086" />
+        <entry key="..\:/Dotify/app/src/main/res/layout/activity_ubah_jadwal.xml" value="0.20471014492753623" />
+        <entry key="..\:/Dotify/app/src/main/res/layout/jadwal.xml" value="0.20471014492753623" />
         <entry key="..\:/MyApplication/app/src/main/res/drawable/home_button.xml" value="0.2703125" />
         <entry key="..\:/MyApplication/app/src/main/res/drawable/rounded_back_button.xml" value="0.2703125" />
         <entry key="..\:/MyApplication/app/src/main/res/drawable/rounded_edit_text.xml" value="0.13425925925925927" />
