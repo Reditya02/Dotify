@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.ImageButton
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.button.MaterialButton
 
 class JadwalSaya : AppCompatActivity() {
@@ -15,6 +16,9 @@ class JadwalSaya : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_jadwal_saya)
+
+        val bottomNavbar = findViewById<BottomNavigationView>(R.id.bottom_navbar)
+        bottomNavbar.inflateMenu(R.menu.bottom_navbar)
 
         findViewById<MaterialButton>(R.id.tambah_jadwal).setOnClickListener {
             val intent = Intent(this, TambahJadwal::class.java)

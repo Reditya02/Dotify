@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HalamanUtama"
     android:gravity="center_horizontal"
+    android:backgroundTint="@color/putih"
     android:orientation="vertical">
 
     <ImageView

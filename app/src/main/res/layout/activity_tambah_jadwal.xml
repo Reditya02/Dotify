@@ -1,136 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TambahJadwal"
-    android:orientation="vertical"
+    android:background="@color/biru_muda"
     android:gravity="center_horizontal"
-    android:background="@color/biru_muda">
+    android:orientation="vertical"
+    tools:context=".TambahJadwal">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="51.55dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:padding="12dp"
-            android:layout_marginStart="17dp"
-            android:id="@+id/kembali"
-            android:src="@drawable/back"
-            android:scaleType="fitCenter"
-            android:background="@drawable/rounded_back_button_white"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/biru_muda"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/kembali"
+                        android:layout_width="48dp"
+                        android:layout_height="51.55dp"
+                        android:layout_marginStart="17dp"
+                        android:background="@drawable/rounded_back_button_white"
+                        android:padding="12dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/back"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/worksans_semibold"
+                    android:text="Tambah Jadwal"
+                    android:textColor="@color/hitam"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/worksans_medium"
+                    android:gravity="start"
+                    android:text="Nama Tugas atau Kegiatan"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/NamaTugas"
+                    android:layout_width="310dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingHorizontal="20dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/worksans_medium"
+                    android:gravity="start"
+                    android:text="Tanggal Tenggat"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/tanggal"
+                    android:layout_width="310dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/white"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    app:cornerRadius="100dp" />
+
+                <TextView
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/worksans_medium"
+                    android:gravity="start"
+                    android:text="Jam"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/jam"
+                    android:layout_width="310dp"
+                    android:layout_height="48dp"
+                    android:backgroundTint="@color/white"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    app:cornerRadius="100dp" />
+
+                <TextView
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/worksans_medium"
+                    android:gravity="start"
+                    android:text="Catatan"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/catatan"
+                    android:layout_width="310dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingHorizontal="20dp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/worksans_medium"
+                    android:gravity="start"
+                    android:text="Atur Pengingat"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/pengingat"
+                    android:layout_width="310dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_edit_text"
+                    android:paddingHorizontal="20dp"
+                    android:textColor="@color/black" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/simpan"
+                    android:layout_width="105dp"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="41dp"
+                    android:layout_marginBottom="138dp"
+                    android:backgroundTint="@color/button"
+                    android:fontFamily="@font/worksans_semibold"
+                    android:text="Simpan"
+                    android:textAllCaps="false"
+                    android:textColor="@color/putih"
+                    android:textSize="17sp"
+                    app:cornerRadius="100dp" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/rounded_back_button_white"
+            android:backgroundTint="@color/biru_muda" />
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tambah Jadwal"
-        android:fontFamily="@font/worksans_semibold"
-        android:textSize="34sp"
-        android:textColor="@color/hitam"/>
+        android:layout_marginHorizontal="23dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/rounded_navbar"
+        app:itemIconTint="@color/putih"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:layout_width="310dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="13dp"
-        android:gravity="start"
-        android:text="Nama Tugas atau Kegiatan"
-        android:fontFamily="@font/worksans_medium"
-        android:textSize="20sp"
-        android:textColor="@color/black"/>
 
-    <EditText
-        android:layout_width="310dp"
-        android:layout_height="48dp"
-        android:id="@+id/NamaTugas"
-        android:background="@drawable/rounded_edit_text"/>
-
-    <TextView
-        android:layout_width="310dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="13dp"
-        android:gravity="start"
-        android:text="Tanggal Tenggat"
-        android:fontFamily="@font/worksans_medium"
-        android:textSize="20sp"
-        android:textColor="@color/black"/>
-
-    <EditText
-        android:layout_width="310dp"
-        android:layout_height="48dp"
-        android:id="@+id/Tanggal"
-        android:background="@drawable/rounded_edit_text"/>
-
-    <TextView
-        android:layout_width="310dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="13dp"
-        android:gravity="start"
-        android:text="Jam"
-        android:fontFamily="@font/worksans_medium"
-        android:textSize="20sp"
-        android:textColor="@color/black"/>
-
-    <EditText
-        android:layout_width="310dp"
-        android:layout_height="48dp"
-        android:id="@+id/Jam"
-        android:background="@drawable/rounded_edit_text"/>
-
-    <TextView
-        android:layout_width="310dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="13dp"
-        android:gravity="start"
-        android:text="Catatan"
-        android:fontFamily="@font/worksans_medium"
-        android:textSize="20sp"
-        android:textColor="@color/black"/>
-
-    <EditText
-        android:layout_width="310dp"
-        android:layout_height="48dp"
-        android:id="@+id/Catatan"
-        android:background="@drawable/rounded_edit_text"/>
-
-    <TextView
-        android:layout_width="310dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="13dp"
-        android:gravity="start"
-        android:text="Atur Pengingat"
-        android:fontFamily="@font/worksans_medium"
-        android:textSize="20sp"
-        android:textColor="@color/black"/>
-
-    <EditText
-        android:layout_width="310dp"
-        android:layout_height="48dp"
-        android:id="@+id/Pengingat"
-        android:background="@drawable/rounded_edit_text"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="105dp"
-        android:layout_height="52dp"
-        android:id="@+id/simpan"
-        app:cornerRadius="100dp"
-        android:backgroundTint="@color/button"
-        android:layout_marginVertical="41dp"
-        android:text="Simpan"
-        android:textAllCaps="false"
-        android:fontFamily="@font/worksans_semibold"
-        android:textSize="17sp"
-        android:textColor="@color/putih"/>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

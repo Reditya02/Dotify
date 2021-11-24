@@ -20,9 +20,6 @@
             android:exported="true" />
         <activity
             android:name="com.example.dotify.HalamanUtama"
-            android:exported="true" />
-        <activity
-            android:name="com.example.dotify.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

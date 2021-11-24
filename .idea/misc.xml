@@ -3,12 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Dotify/app/src/main/res/drawable/rounded_back_button.xml" value="0.2189873417721519" />
+        <entry key="..\:/Dotify/app/src/main/res/drawable/rounded_back_button_white.xml" value="0.22179487179487178" />
+        <entry key="..\:/Dotify/app/src/main/res/drawable/rounded_edit_text.xml" value="0.2703125" />
+        <entry key="..\:/Dotify/app/src/main/res/drawable/rounded_navbar.xml" value="0.2189873417721519" />
         <entry key="..\:/Dotify/app/src/main/res/layout/activity_halaman_utama.xml" value="0.152" />
-        <entry key="..\:/Dotify/app/src/main/res/layout/activity_jadwal_saya.xml" value="0.20471014492753623" />
+        <entry key="..\:/Dotify/app/src/main/res/layout/activity_jadwal_saya.xml" value="0.1" />
         <entry key="..\:/Dotify/app/src/main/res/layout/activity_main.xml" value="0.10085470085470086" />
-        <entry key="..\:/Dotify/app/src/main/res/layout/activity_tambah_jadwal.xml" value="0.10085470085470086" />
-        <entry key="..\:/Dotify/app/src/main/res/layout/activity_ubah_jadwal.xml" value="0.20471014492753623" />
+        <entry key="..\:/Dotify/app/src/main/res/layout/activity_tambah_jadwal.xml" value="0.264" />
+        <entry key="..\:/Dotify/app/src/main/res/layout/activity_ubah_jadwal.xml" value="0.2" />
+        <entry key="..\:/Dotify/app/src/main/res/layout/fragment_navbar.xml" value="0.18206521739130435" />
         <entry key="..\:/Dotify/app/src/main/res/layout/jadwal.xml" value="0.20471014492753623" />
+        <entry key="..\:/Dotify/app/src/main/res/menu/bottom_navbar.xml" value="0.20854700854700856" />
         <entry key="..\:/MyApplication/app/src/main/res/drawable/home_button.xml" value="0.2703125" />
         <entry key="..\:/MyApplication/app/src/main/res/drawable/rounded_back_button.xml" value="0.2703125" />
         <entry key="..\:/MyApplication/app/src/main/res/drawable/rounded_edit_text.xml" value="0.13425925925925927" />
